@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practical-test';
+  isSidebarVisible: boolean = false;
+
+  toggleSidebar() {
+    this.isSidebarVisible = !this.isSidebarVisible;
+    console.log(this.isSidebarVisible); // Output the value to console for debugging
+  }
 }

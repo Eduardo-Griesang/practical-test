@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -11,4 +11,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   imports: [MatToolbarModule, MatButtonModule, MatIconModule],
 })
 
-export class ToolbarComponent {}
+export class ToolbarComponent {
+  @Output() toggleSidebarEvent: EventEmitter<void> = new EventEmitter<void>();
+
+  toggleSidebar() {
+    this.toggleSidebarEvent.emit();
+  }
+}

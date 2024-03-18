@@ -1,3 +1,6 @@
 <main>
-  <tool-bar></tool-bar>
+  <tool-bar (toggleSidebarEvent)="toggleSidebar()"></tool-bar>
+  <div>
+    <app-side-bar *ngIf="isSidebarVisible"></app-side-bar>
+  </div>
 </main>
