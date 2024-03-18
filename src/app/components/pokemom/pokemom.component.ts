@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { PokemonService } from 'src/app/services/pokemon.service';
   styleUrls: ['./pokemom.component.sass']
 })
 export class PokemomComponent {
+  @Input() isSidebarVisible!: boolean 
   pokemonData: any;
 
   constructor(private pokemonService: PokemonService) {}

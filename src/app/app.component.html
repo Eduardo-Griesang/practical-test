@@ -2,6 +2,6 @@
   <tool-bar (toggleSidebarEvent)="toggleSidebar()"></tool-bar>
   <div class="main-container">
     <app-side-bar *ngIf="isSidebarVisible"></app-side-bar>
-    <app-pokemom [ngClass]="{ 'full-width': !isSidebarVisible }" class="pokemon"></app-pokemom>
+    <app-pokemom [isSidebarVisible]="isSidebarVisible" class="pokemon"></app-pokemom>
   </div>
 </main>

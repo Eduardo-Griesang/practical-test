@@ -11,6 +11,6 @@ export class AppComponent {
 
   toggleSidebar() {
     this.isSidebarVisible = !this.isSidebarVisible;
-    console.log(this.isSidebarVisible); // Output the value to console for debugging
+    console.log(this.isSidebarVisible);
   }
 }
