@@ -1,0 +1,15 @@
+<div *ngIf="pokemonData" class="container">
+    <div class="pokemon">
+        <h2>{{ pokemonData.name }}   {{ pokemonData.id }}</h2>
+        <p>Class: {{ pokemonData.types[0].type.name }}</p>
+        <div class="data">
+            <img [src]="pokemonData.sprites.front_default" alt="Pokemon Image">
+            <div>
+                <div *ngFor="let stat of pokemonData.stats">
+                    <p>{{ stat.stat.name }}: {{ stat.base_stat }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  

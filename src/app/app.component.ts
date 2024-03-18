@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practical-test';
-  isSidebarVisible: boolean = false;
+  isSidebarVisible: boolean = true;
 
   toggleSidebar() {
     this.isSidebarVisible = !this.isSidebarVisible;

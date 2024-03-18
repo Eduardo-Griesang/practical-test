@@ -1,17 +1,25 @@
 .container
     background: white
-    padding-left: 1em
     padding-top: 1em
-    width: 40%
-    height: 92.64vh
+    width: 60vw
+    height: 91vh
+
+    @media screen and (min-width: 768px)
+        width: 40vw
 
 .user
     display: flex
     align-items: center
     gap: 1em
+    padding-left: 1em
+    padding-bottom: 1em
 
 .user h3
     margin: 0
 
 .user img
     max-width: 50px
+
+.line
+    height: 3px
+    background: #999999
